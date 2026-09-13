@@ -68,6 +68,24 @@ graphify-out/
 
 ---
 
+## ⚖️ Community Showcase: LegalGraphify for Civil Law & Jurisprudence
+
+> **[Open Legal Chile](https://github.com/elpabloultron/open-legal-chile)** adapts the Graphify knowledge graph paradigm to the Chilean legal system (Civil Law / Continental Law).
+
+Instead of stuffing 800-page civil law treatises and statutes into an LLM context window (or relying on naive RAG retrieval), **LegalGraphify** builds a canonical, deterministic ontological sub-graph:
+
+- **85%–95% Token Reduction:** Condenses thousands of tokens of legal doctrine, statutory requirements (BCN Ley Chile), Supreme Court case law (PJUD), and procedural remedies into clean YAML sub-graphs at $N$ relational hops.
+- **Explainable Jurisprudence:** Traces precise legal relationships (`requisitos`, `efectos`, `sanciones`, `plazos`, `excepciones`) with 100% deterministic auditability.
+- **Official MCP Server:** Integrated into the [Official Anthropic MCP Registry](https://registry.modelcontextprotocol.io/) (`io.github.elpabloultron/open-legal-chile`) and [Smithery.ai](https://smithery.ai/servers/pablobenavidesjorquera/open-legal-chile) with 55 legal tools.
+- **Interactive Sandbox:** Explore live at [elpabloultron.github.io/open-legal-chile](https://elpabloultron.github.io/open-legal-chile/).
+
+```bash
+# Query LegalGraphify directly with Open Legal Chile
+$ openlegal graph "simulacion" --saltos 2
+```
+
+---
+
 ## See it in action
 
 <p align="center">
